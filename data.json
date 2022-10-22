@@ -1,0 +1,25 @@
+{
+    "emp0": {
+        "tag": "emp0",
+        "patterns": [
+            [
+                "How are you doing?"
+            ]
+        ],
+        "responses": [
+            "dsws"
+        ]
+    },
+    "emp1": {
+        "tag": "emp1",
+        "patterns": [
+            [
+                "What's your name?",
+                "May I have your name?"
+            ]
+        ],
+        "responses": [
+            "/usr/bin/python3 /media/password/nvidia/robo_AI/data.py"
+        ]
+    }
+}
