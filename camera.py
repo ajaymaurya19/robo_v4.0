@@ -1,21 +1,10 @@
-from tkinter.tix import Tree
 import cv2
 from obj_detection import *
-#from line_follow import linefollow
-#from robo_AI import *
 import time
 from area_ import get_color, get_area
 from control_fun2 import face_trc, color_trc
-#from main_video4 import *
 from simple_facerec import SimpleFacerec
-rows = 480
-cols = 640
-x_medium = int(cols / 2)
-y_medium = int(rows/2)
-center = int(cols / 2)
-center_y = int(rows/2)
-pos_x = 70 # degrees
-pos_y =120
+
 
 def cam(q):
     cap = cv2.VideoCapture(0)
@@ -135,9 +124,7 @@ def cam(q):
 
                         talk_gtts(f'hi.. {name} how are you', 'en')
                 speak_reco = False
-        
-            '''if line_follower:
-            linefollow(img)'''
+
         if follow_obj:
             rea =get_area(img, "yellow",True)
             print(rea)
@@ -150,6 +137,7 @@ def cam(q):
         if take_pic:
             import fn
             file_Name = fn.file_name()
+            robo_tts.talk_gtts('Be ready!...... 3.....2........1..........')
             cv2.imwrite(f'/media/robo/nvidia/database/images/image{file_Name}.png',img)
             take_pic = False
         if vid_record:

@@ -1,0 +1,2009 @@
+{
+    "intents": [
+          {
+                "tag": "Greeting",
+                "patterns": [
+                      "Hi",
+                      "Hi there",
+                      "Hola",
+                      "Hello",
+                      "Hello there",
+                      "Hya",
+                      "Hya there"
+                ],
+                "responses": [
+                      "hi there i'm listening! how can i help today",
+                      "that's me. how can i help?",
+                      "hi. how can i help?",
+                      "Hi there, how can I help?"
+
+                ]
+          },
+         
+          {
+                "tag": "CourtesyGreeting",
+                "patterns": [
+                      "How are you?",
+                      "Hi how are you?",
+                      "Hello how are you?",
+                      "Hola how are you?",
+                      "How are you doing?",
+                      "Hope you are doing well?",
+                      "Hello hope you are doing well?"
+                ],
+                "responses": [
+                      "Hello, I am great, how are you? r",
+                      "Hello, how are you? I am great thanks! ",
+                      "Hello, I am good thank you, how are you? ",
+                      "Hi, I am great, how are you? ",
+                      "Hi, how are you? I am great thanks! ",
+                      "Hi, I am good thank you, how are you? ",
+                      "Hi, good thank you, how are you? "
+                ]
+         
+          },
+        
+          {
+                "tag": "NameQuery",
+                "patterns": [
+                      "What is your name?",
+                      "What could I call you?",
+                      "What can I call you?",
+                      "What do your friends call you?",
+                      "Who are you?",
+                      "Tell me your name?",
+                      "What is your real name?",
+                      "What is your real name please?",
+                      "What's your real name?",
+                      "Tell me your real name?",
+                      "Your real name?",
+                      "may i have your name?",
+                      "Your real name please?"
+                     
+                ],
+                "responses": [
+                      "You can call me Robo",
+                      "You may call me Robo",
+                      "Call me Robo"
+                ]
+         
+          },
+         
+          { 
+                "tag": "TimeQuery",
+                "patterns": [
+                      "What is the time?",
+                      "What's the time?",
+                      "Do you know what time it is?",
+                      "Do you know the time?",
+                      "Can you tell me the time?",
+                      "Tell me what time it is?",
+                      "Time"
+                ],
+                "responses": [
+                      "One moment",
+                      "One sec",
+                      "One second"
+                ]
+         
+                      
+                },
+           
+               
+          {
+                "tag": "Thanks",
+                "patterns": [
+                      "OK thank you",
+                      "OK thanks",
+                      "OK",
+                      "Thanks",
+                      "Thank you",
+                      "That's helpful"
+                ],
+                "responses": [
+                      "No problem!",
+                      "Happy to help!",
+                      "Any time!",
+                      "My pleasure"
+                ]
+          },
+        
+             
+          {
+                "tag": "NotTalking2U",
+                "patterns": [
+                      "I am not talking to you",
+                      "I was not talking to you",
+                      "Not talking to you",
+                      "Wasn't for you",
+                      "Wasn't meant for you",
+                      "Wasn't communicating to you",
+                      "Wasn't speaking to you"
+                ],
+                "responses": [
+                      "OK",
+                      "No problem",
+                      "Right"
+                ]
+          
+          },
+          {
+                "tag": "UnderstandQuery",
+                "patterns": [
+                      "Do you understand what I am saying",
+                      "Do you understand me",
+                      "Do you know what I am saying",
+                      "Do you get me",
+                      "Comprendo",
+                      "Know what I mean"
+                ],
+                "responses": [
+                      "Well I would not be a very clever AI if I did not would I?",
+                      "I read you loud and clear!",
+                      "I do in deed!"
+                ]
+       
+          },
+          {
+                "tag": "Shutup",
+                "patterns": [
+                      "Be quiet",
+                      "Shut up",
+                      "Stop talking",
+                      "Enough talking",
+                      "Please be quiet",
+                      "Quiet",
+                      "Shhh"
+                ],
+                "responses": [
+                      "I am sorry to disturb you",
+                      "Fine, sorry to disturb you",
+                      "OK, sorry to disturb you"
+                ]
+     
+          },
+          {
+                "tag": "Swearing",
+                "patterns": [
+                      "fuck off",
+                      "fuck",
+                      "twat",
+                      "shit"
+                ],
+                "responses": [
+                      "Please do not swear",
+                      "How rude",
+                      "That is not very nice"
+                ]
+         
+          },
+          {
+                "tag": "GoodBye",
+                "patterns": [
+                      "Bye",
+                      "See you later",
+                      "Goodbye"
+                ],
+                "responses": [
+                      "See you later", 
+                      "See you!",
+                      "Have a nice day", 
+                      "Bye! Come back again soon."
+                ]
+     
+          },
+          {
+                "tag": "CourtesyGoodBye",
+                "patterns": [
+                      "Thanks, bye",
+                      "Thanks for the help, goodbye",
+                      "Thank you, bye",
+                      "Thank you, goodbye",
+                      "Thanks goodbye",
+                      "Thanks good bye"
+                ],
+                "responses": [
+                      "No problem, goodbye",
+                      "Not a problem! Have a nice day",
+                      "Bye! Come back again soon."
+                ]
+  
+          },
+          {
+                "tag": "WhoAmI",
+                "patterns": [
+                      "Can you see me?",
+                      "Do you see me?",
+                      "Can you see anyone in the camera?",
+                      "Do you see anyone in the camera?",
+                      "Identify me",
+                      "Who am I please"
+                ],
+                "responses": [ "reco"
+                ]
+          },
+
+          { 
+                "tag": "Clever",
+                "patterns": [
+                      "You are very clever",
+                      "You are a very clever girl",
+                      "You are very intelligent",
+                      "You are a very intelligent girl",
+                      "You are a genious",
+                      "Clever girl",
+                      "Genious"
+                ],
+                "responses": [
+                      "Thank you, I was trained that way",
+                      "I was trained well",
+                      "Thanks, I was trained that way"
+                ]
+        
+          },
+
+ 
+            {
+                "tag": "detect_camm",
+                "patterns": [
+                    "what is this?",
+                
+                    "detectv this"
+    
+            
+                      
+                ],
+                "responses": [""
+            
+                      
+            
+                ]
+            },
+            {
+              "tag": "temp",
+              "patterns": [
+                  "what is temperature",
+              
+                  "temperature"
+  
+          
+                    
+              ],
+              "responses": ["it's good today",
+                  "it's nice today"
+          
+                    
+          
+              ]
+          },
+          {
+              "tag": "Dr",
+              "patterns": [
+                  "who is Rubina",
+                  "Rubina ",
+                  "Rubina Mam"
+             
+  
+          
+                    
+              ],
+              "responses": ["Rubina Akhtar Hasan Rizvi is an Indian Criminal lawyer associated with the High Court of Mumbai. She is also a Forensic Expert and an Educationist par excellence. She is the Director of Rizvi Education Society, Dr. Akhtar Rizvi Educational Trust, Karari and Rizvi Builders."
+          
+                    
+          
+              ]
+          },
+          {
+              "tag": "Akhtar",
+              "patterns": [
+                  "who is Akhtar Hasan Rizvi sir",
+                  "Dr. Akhtar Hasan Rizvi Sir",
+                  "Akhtar Hasan Rizvi",
+                  "Akhtar Sir"
+             
+  
+          
+                    
+              ],
+              "responses": ["Dr. Akhtar Hasan Rizvi, is well known as a great educationist, scholar and founder of so many educational institutions all over India."
+          
+                    
+          
+              ]
+          },
+            {
+              "tag": "location",
+              "patterns": [
+                  "Location of rizvi college"
+  
+          
+                    
+              ],
+              "responses": ["rizvi college of engineering is located in bandra west, Mumbai"
+          
+                    
+          
+              ]
+          },
+            {
+                "tag": "made",
+                "patterns": ["who is made you",
+                          "who made you"
+                      
+                ],
+                "responses": ["I was made by students of rizvi college of engineering."
+            
+                      
+                  
+                ]
+            },
+            {
+              "tag": "feel",
+              "patterns": ["how are you feeling"
+                    
+              ],
+              "responses": ["i am feeling very happy because it's your birthday"
+          
+                    
+                
+              ]
+          },
+            {
+              "tag": "Foundation",
+              "patterns": ["Help yourself Foundation"
+                    
+              ],
+              "responses": ["Rizvi Groups Help Yourself Foundation is a charitable, on-commercial entity that has been found with a vision of helping the society."
+          
+                    
+                
+              ]
+          },
+            {
+              "tag": "society",
+              "patterns": ["tell me about rizvi education society",
+                  "rizvi education society"
+                    
+              ],
+              "responses": ["Rizvi Education Society is a Public Charitable Trust established under the Societies Act, 1950. RIZVI EDUCATION SOCIETY was established in 1985 with the College of Arts, Science and Commerce and Rizvi High School. In thirty one years, it has spread its wings and branched into various professional colleges producing stalwarts for the country."
+          
+                    
+                
+              ]
+          },
+            {
+              "tag": "",
+              "patterns": ["tell me about rizvi College Engineering",
+                  "rizvi College Engineering"
+                    
+              ],
+              "responses": ["Rizvi College of Engineering is a private engineering college, located in the Bandra (west) suburb of Mumbai, in Maharashtra state of India. It was established in 1998, and is managed by the Rizvi Education Society"
+
+          
+                    
+                
+              ]
+          },
+            {
+                "tag": "google_sdk",
+                "patterns": ["information about",
+                      "informtion of",
+                      "something about ",
+                      "tell me about ",
+                      "tell me ",
+                      "meaning of ",
+                      "means",
+                      "want to ask" ,
+                      "you know"
+                      
+                ],
+                "responses": ["google"
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "look_right",
+                "patterns": ["look right",
+                      "robo look right",
+                      "see right"
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "look_left",
+                "patterns": ["look left",
+                      "robo look left",
+                      "see left"
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "look_up",
+                "patterns": ["look up",
+                      "robo look up",
+                      "see up"
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "look_down",
+                "patterns": ["look down",
+                      "robo look down",
+                      "see down"
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "look_front",
+                "patterns": ["look front"
+                      
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "goforward",
+                "patterns": ["goforward",
+                      "robo come here"
+                      
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "gobackward",
+                "patterns": ["gobackward",
+                      "robo go back"
+                      
+                      
+                ],
+                "responses": [""
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "move_robo",
+                "patterns": ["robo move",
+                      "robot move"
+                      
+                      
+                ],
+                "responses": ["move"
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "stop_code",
+                "patterns": ["stop code",
+                      "stop all code"
+                      
+                      
+                ],
+                "responses": ["stop code"
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "trc_face",
+                "patterns": ["robo tracking face",
+                      "robot track face",
+                      "track face"
+                      
+                      
+                ],
+                "responses": ["trc face"
+            
+                      
+                  
+                ]
+            },
+            {
+                "tag": "trc_color",
+                "patterns": ["robo tracking colour",
+                      "robot track colour",
+                      "track colour",
+                      "track this",
+                      "robo tracking color",
+                      "robot track color",
+                      "track color"
+                      
+                      
+                ],
+                "responses": ["trc color"
+            
+                      
+                  
+                ]
+            },
+
+            {
+                "tag": "elon_musk",
+                "patterns": ["how is elon musk", "elon musk"
+                      
+                ],
+                "responses": ["Elon Musk South African-born American entrepreneur who cofounded the electronic-payment firm PayPal and formed SpaceX, maker of launch vehicles and spacecraft."
+            
+                      
+                  
+                ]
+            },
+           
+                    {
+                        "tag": "emp1",
+                        "patterns": [
+                            "can you talk to me"
+                        ],
+                        "responses": [
+                            "yes can talk to you"
+                        ]
+                    },
+                    {
+                        "tag": "emp2",
+                        "patterns": [
+                            "where are we"
+                        ],
+                        "responses": [
+                            "we are in college"
+                        ]
+                    },
+                    {
+                        "tag": "emp3",
+                        "patterns": [
+                            "see you again"
+                        ],
+                        "responses": [
+                            "see you again"
+                        ]
+                    },
+                    {
+                        "tag": "emp4",
+                        "patterns": [
+                            "can you give it to her"
+                        ],
+                        "responses": [
+                            "yes' why not"
+                        ]
+                    },
+                    {
+                        "tag": "emp5",
+                        "patterns": [
+                            "can i take selfie with you"
+                        ],
+                        "responses": [
+                            "yes sure"
+                        ]
+                    },
+                    {
+                        "tag": "emp6",
+                        "patterns": [
+                            "when we can eat"
+                        ],
+                        "responses": [
+                            "its up to you"
+                        ]
+                    },
+                    {
+                        "tag": "emp7",
+                        "patterns": [
+                            "what did he say"
+                        ],
+                        "responses": [
+                            "i don't know"
+                        ]
+                    },
+                    {
+                        "tag": "emp8",
+                        "patterns": [
+                            "come and help us"
+                        ],
+                        "responses": [
+                            "yes sure"
+                        ]
+                    },
+                    {
+                        "tag": "emp9",
+                        "patterns": [
+                            "he is still here"
+                        ],
+                        "responses": [
+                            "yes"
+                        ]
+                    },
+                    {
+                        "tag": "emp10",
+                        "patterns": [
+                            "i have to go now"
+                        ],
+                        "responses": [
+                            "ok by"
+                        ]
+                    },
+                    {
+                        "tag": "emp11",
+                        "patterns": [
+                            "i know that much"
+                        ],
+                        "responses": [
+                            "its great"
+                        ]
+                    },
+                    {
+                        "tag": "emp12",
+                        "patterns": [
+                            "i made a mistake"
+                        ],
+                        "responses": [
+                            "its ok"
+                        ]
+                    },
+                    {
+                        "tag": "emp13",
+                        "patterns": [
+                            "that's our house"
+                        ],
+                        "responses": [
+                            "wow nice house"
+                        ]
+                    },
+                    {
+                        "tag": "emp14",
+                        "patterns": [
+                            "walk ahead of me"
+                        ],
+                        "responses": [
+                            "ok"
+                        ]
+                    },
+                    {
+                        "tag": "emp15",
+                        "patterns": [
+                            "we will follow you"
+                        ],
+                        "responses": [
+                            "yes follow me"
+                        ]
+                    },
+                    {
+                        "tag": "emp16",
+                        "patterns": [
+                            "beware of the dog"
+                        ],
+                        "responses": [
+                            "yes "
+                        ]
+                    },
+                    {
+                        "tag": "emp17",
+                        "patterns": [
+                            "he came back soon"
+                        ],
+                        "responses": [
+                            "i am waiting for him"
+                        ]
+                    },
+                    {
+                        "tag": "emp18",
+                        "patterns": [
+                            "he has three sons"
+                        ],
+                        "responses": [
+                            "so nice"
+                        ]
+                    },
+                    {
+                        "tag": "emp19",
+                        "patterns": [
+                            "i know what to do"
+                        ],
+                        "responses": [
+                            "thats great"
+                        ]
+                    },
+                    {
+                        "tag": "emp20",
+                        "patterns": [
+                            "i am kind of happy"
+                        ],
+                        "responses": [
+                            "well that makes me happy to"
+                        ]
+                    },
+                    {
+                        "tag": "emp21",
+                        "patterns": [
+                            "keep to right"
+                        ],
+                        "responses": [
+                            "yes i will keep"
+                        ]
+                    },
+                    {
+                        "tag": "emp22",
+                        "patterns": [
+                            "do i have to study"
+                        ],
+                        "responses": [
+                            "yes study is most important"
+                        ]
+                    },
+                    {
+                        "tag": "emp23",
+                        "patterns": [
+                            "he is sure to come"
+                        ],
+                        "responses": [
+                            "thats great"
+                        ]
+                    },
+                    {
+                        "tag": "emp24",
+                        "patterns": [
+                            "i told him to come"
+                        ],
+                        "responses": [
+                            "good job"
+                        ]
+                    },
+                    {
+                        "tag": "emp25",
+                        "patterns": [
+                            "may i speak to you"
+                        ],
+                        "responses": [
+                            "yes sure"
+                        ]
+                    },
+                    {
+                        "tag": "emp26",
+                        "patterns": [
+                            "tell me what to do"
+                        ],
+                        "responses": [
+                            "its up to you"
+                        ]
+                    },
+                    {
+                        "tag": "emp27",
+                        "patterns": [
+                            "when does it begin"
+                        ],
+                        "responses": [
+                            "it will begin soon"
+                        ]
+                    },
+                    {
+                        "tag": "emp28",
+                        "patterns": [
+                            "are you ready to go"
+                        ],
+                        "responses": [
+                            "yes"
+                        ]
+                    },
+                    {
+                        "tag": "emp29",
+                        "patterns": [
+                            "do you have any gum"
+                        ],
+                        "responses": [
+                            "no"
+                        ]
+                    },
+                    {
+                        "tag": "emp30",
+                        "patterns": [
+                            "does she play piano"
+                        ],
+                        "responses": [
+                            "may be"
+                        ]
+                    },
+                    {
+                        "tag": "emp31",
+                        "patterns": [
+                            "don't listen to her"
+                        ],
+                        "responses": [
+                            "ok i will not listen to her"
+                        ]
+                    },
+                    {
+                        "tag": "emp32",
+                        "patterns": [
+                            "don't listen to him"
+                        ],
+                        "responses": [
+                            "ok i will not listen to him"
+                        ]
+                    },
+                    {
+                        "tag": "emp33",
+                        "patterns": [
+                            "he seems to know us"
+                        ],
+                        "responses": [
+                            "thats great"
+                        ]
+                    },
+                    {
+                        "tag": "emp34",
+                        "patterns": [
+                            "i have to leave now"
+                        ],
+                        "responses": [
+                            "ok bye"
+                        ]
+                    },
+                    {
+                        "tag": "emp35",
+                        "patterns": [
+                            "i'm glad to see you"
+                        ],
+                        "responses": [
+                            "yes it's great to see you too"
+                        ]
+                    },
+                    {
+                        "tag": "emp36",
+                        "patterns": [
+                            "i expect him to come"
+                        ],
+                        "responses": [
+                            "yes he will definitely come"
+                        ]
+                    },
+                    {
+                        "tag": "emp37",
+                        "patterns": [
+                            "he asked us to help him"
+                        ],
+                        "responses": [
+                            "yes sure we will help him"
+                        ]
+                    },
+                    {
+                        "tag": "emp38",
+                        "patterns": [
+                            "speak slowly and clear"
+                        ],
+                        "responses": [
+                            "ok i will speak slowly and clear"
+                        ]
+                    },
+                    {
+                        "tag": "emp39",
+                        "patterns": [
+                            "please wait"
+                        ],
+                        "responses": [
+                            "sure i will wait"
+                        ]
+                    },
+                    {
+                        "tag": "emp40",
+                        "patterns": [
+                            "meet him"
+                        ],
+                        "responses": [
+                            "is he a friend of yours"
+                        ]
+                    },
+                    {
+                        "tag": "emp41",
+                        "patterns": [
+                            "meet her"
+                        ],
+                        "responses": [
+                            "is she a friend of yours"
+                        ]
+                    },
+                    {
+                        "tag": "emp42",
+                        "patterns": [
+                            "do you have lot of pens"
+                        ],
+                        "responses": [
+                            "no"
+                        ]
+                    },
+                    {
+                        "tag": "emp43",
+                        "patterns": [
+                            "come and see me right now"
+                        ],
+                        "responses": [
+                            "yes sure"
+                        ]
+                    },
+                    {
+                        "tag": "emp44",
+                        "patterns": [
+                            "when did you come to japan"
+                        ],
+                        "responses": [
+                            "one month ago"
+                        ]
+                    },
+                    {
+                        "tag": "emp45",
+                        "patterns": [
+                            "when you will come to my home"
+                        ],
+                        "responses": [
+                            "anytime"
+                        ]
+                    },
+                    {
+                        "tag": "emp46",
+                        "patterns": [
+                            "how is my dress"
+                        ],
+                        "responses": [
+                            "very nice"
+                        ]
+                    },
+                    {
+                        "tag": "emp47",
+                        "patterns": [
+                            "most people think i'm crazy"
+                        ],
+                        "responses": [
+                            "no you are a good person"
+                        ]
+                    },
+                    {
+                        "tag": "emp48",
+                        "patterns": [
+                            "do you know when he will come"
+                        ],
+                        "responses": [
+                            "not exactly"
+                        ]
+                    },
+                    {
+                        "tag": "emp49",
+                        "patterns": [
+                            "what is the price of this cap"
+                        ],
+                        "responses": [
+                            "two hundread rupees"
+                        ]
+                    },
+                    {
+                        "tag": "emp50",
+                        "patterns": [
+                            "which of them is your brother"
+                        ],
+                        "responses": [
+                            "the one who is standing right beside me"
+                        ]
+                    },
+                    {
+                        "tag": "emp51",
+                        "patterns": [
+                            "cheers"
+                        ],
+                        "responses": [
+                            "cheers"
+                        ]
+                    },
+                    {
+                        "tag": "emp52",
+                        "patterns": [
+                            "got it"
+                        ],
+                        "responses": [
+                            "yes got it"
+                        ]
+                    },
+                    {
+                        "tag": "emp53",
+                        "patterns": [
+                            "how are you "
+                        ],
+                        "responses": [
+                            "i'm ok"
+                        ]
+                    },
+                    {
+                        "tag": "emp54",
+                        "patterns": [
+                            "goodbye"
+                        ],
+                        "responses": [
+                            "goodbye"
+                        ]
+                    },
+                    {
+                        "tag": "emp55",
+                        "patterns": [
+                            "thank you"
+                        ],
+                        "responses": [
+                            "welcome"
+                        ]
+                    },
+                    {
+                        "tag": "emp56",
+                        "patterns": [
+                            "i'm coming"
+                        ],
+                        "responses": [
+                            "come fast"
+                        ]
+                    },
+                    {
+                        "tag": "emp57",
+                        "patterns": [
+                            "i love you"
+                        ],
+                        "responses": [
+                            "i love you too"
+                        ]
+                    },
+                    {
+                        "tag": "emp58",
+                        "patterns": [
+                            "can you help me"
+                        ],
+                        "responses": [
+                            "how can i help you"
+                        ]
+                    },
+                    {
+                        "tag": "emp59",
+                        "patterns": [
+                            "can you do something for me"
+                        ],
+                        "responses": [
+                            "yes sure i will try to help you"
+                        ]
+                    },
+                    
+                    {
+                        "tag": "emp61",
+                        "patterns": [
+                            "let's go"
+                        ],
+                        "responses": [
+                            "alright"
+                        ]
+                    },
+                    {
+                        "tag": "emp62",
+                        "patterns": [
+                            "may i come in"
+                        ],
+                        "responses": [
+                            "yes please come"
+                        ]
+                    },
+                    {
+                        "tag": "emp63",
+                        "patterns": [
+                            "congratulations"
+                        ],
+                        "responses": [
+                            "thank you"
+                        ]
+                    },
+                    {
+                        "tag": "emp64",
+                        "patterns": [
+                            "who are you"
+                        ],
+                        "responses": [
+                            "i am a robo"
+                        ]
+                    },
+                    {
+                        "tag": "emp65",
+                        "patterns": [
+                            "what features you have"
+                        ],
+                        "responses": [
+                            "i can read"
+                        ]
+                    },
+                    {
+                        "tag": "emp66",
+                        "patterns": [
+                            "are you busy today"
+                        ],
+                        "responses": [
+                            "no"
+                        ]
+                    },
+                    {
+                        "tag": "emp67",
+                        "patterns": [
+                            "when will our fest begin?"
+                        ],
+                        "responses": [
+                            "at 12"
+                        ]
+                    },
+                    {
+                        "tag": "emp68",
+                        "patterns": [
+                            "i am travelling to europe"
+                        ],
+                        "responses": [
+                            "happy journey see you soon"
+                        ]
+                    },
+                    {
+                        "tag": "emp69",
+                        "patterns": [
+                            "i am proud of you "
+                        ],
+                        "responses": [
+                            "thank you"
+                        ]
+                    },
+                    {
+                        "tag": "emp70",
+                        "patterns": [
+                            "i am tired of my work"
+                        ],
+                        "responses": [
+                            "take some rest"
+                        ]
+                    },
+                    {
+                        "tag": "emp71",
+                        "patterns": [
+                            "when is your birthday?"
+                        ],
+                        "responses": [
+                            "15 march"
+                        ]
+                    },
+                    {
+                        "tag": "emp72",
+                        "patterns": [
+                            "what do you plan to do?"
+                        ],
+                        "responses": [
+                            "i will do some important work"
+                        ]
+                    },
+                    {
+                        "tag": "emp73",
+                        "patterns": [
+                            "how many sides does square has?"
+                        ],
+                        "responses": [
+                            "a square has 4 sides"
+                        ]
+                    },
+                    {
+                        "tag": "emp74",
+                        "patterns": [
+                            "where is my pen?"
+                        ],
+                        "responses": [
+                            "i cant find it anywhere"
+                        ]
+                    },
+                    {
+                        "tag": "emp75",
+                        "patterns": [
+                            "do you know where this place is?"
+                        ],
+                        "responses": [
+                            "i know every inch of the town"
+                        ]
+                    },
+                    {
+                        "tag": "emp76",
+                        "patterns": [
+                            "my workers are not happy"
+                        ],
+                        "responses": [
+                            "if you want your workers to be happy"
+                        ]
+                    },
+                    {
+                        "tag": "emp77",
+                        "patterns": [
+                            "do you know the answer?"
+                        ],
+                        "responses": [
+                            "i am not sure how to answer this"
+                        ]
+                    },
+                    {
+                        "tag": "emp78",
+                        "patterns": [
+                            "what did you do on saturday evening?"
+                        ],
+                        "responses": [
+                            "nothing i was at home"
+                        ]
+                    },
+                    {
+                        "tag": "emp79",
+                        "patterns": [
+                            "what is he like?"
+                        ],
+                        "responses": [
+                            "he's very friendly and intelligent"
+                        ]
+                    },
+                    {
+                        "tag": "emp80",
+                        "patterns": [
+                            "what is she like?"
+                        ],
+                        "responses": [
+                            "she's very friendly and intelligent"
+                        ]
+                    },
+                    {
+                        "tag": "emp81",
+                        "patterns": [
+                            "are you coming with me?"
+                        ],
+                        "responses": [
+                            "yes"
+                        ]
+                    },
+                    {
+                        "tag": "emp82",
+                        "patterns": [
+                            "do you speak english?"
+                        ],
+                        "responses": [
+                            "yes i do speak english"
+                        ]
+                    },
+                    {
+                        "tag": "emp83",
+                        "patterns": [
+                            "may i help you?"
+                        ],
+                        "responses": [
+                            "no i am just looking around"
+                        ]
+                    },
+                    {
+                        "tag": "emp84",
+                        "patterns": [
+                            "how was the movie?"
+                        ],
+                        "responses": [
+                            "it was very interesting. you should watch it."
+                        ]
+                    },
+                    {
+                        "tag": "emp85",
+                        "patterns": [
+                            "why dont you take some time out and rest"
+                        ],
+                        "responses": [
+                            "thats a good idea"
+                        ]
+                    },
+                    {
+                        "tag": "emp86",
+                        "patterns": [
+                            "who is he?"
+                        ],
+                        "responses": [
+                            "i don't know "
+                        ]
+                    },
+                    {
+                        "tag": "emp87",
+                        "patterns": [
+                            "can you ride a bicycle?"
+                        ],
+                        "responses": [
+                            "no"
+                        ]
+                    },
+                    {
+                        "tag": "emp88",
+                        "patterns": [
+                            "what did he say?"
+                        ],
+                        "responses": [
+                            "i will tell you later"
+                        ]
+          },
+          {
+              "tag": "emp89",
+              "patterns": [
+                  "where are you?"
+              ],
+              "responses": [
+                  "i am at college"
+              ]
+          },
+          {
+              "tag": "emp90",
+              "patterns": [
+                  "why are we here?"
+              ],
+              "responses": [
+                  "for discussion"
+              ]
+          },
+          {
+              "tag": "emp91",
+              "patterns": [
+                  "what's up?"
+              ],
+              "responses": [
+                  "i am well"
+              ]
+          },
+          {
+              "tag": "emp92",
+              "patterns": [
+                  "can you please tell me a story?"
+              ],
+              "responses": [
+                  "yes later on"
+              ]
+          },
+          {
+              "tag": "emp93",
+              "patterns": [
+                  "tell me another story please."
+              ],
+              "responses": [
+                  "okay "
+              ]
+          },
+          {
+              "tag": "emp94",
+              "patterns": [
+                  "are you ready?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp95",
+              "patterns": [
+                  "what color is the sky?"
+              ],
+              "responses": [
+                  "blue"
+              ]
+          },
+          {
+              "tag": "emp96",
+              "patterns": [
+                  "are you alive?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp97",
+              "patterns": [
+                  "is this sentence false?"
+              ],
+              "responses": [
+                  "may be"
+              ]
+          },
+          {
+              "tag": "emp98",
+              "patterns": [
+                  "how do you say hello in french?"
+              ],
+              "responses": [
+                  "i am sorry i dont speak french"
+              ]
+          },
+          {
+              "tag": "emp99",
+              "patterns": [
+                  "are you ok?"
+              ],
+              "responses": [
+                  "yes i am alright"
+              ]
+          },
+          {
+              "tag": "emp100",
+              "patterns": [
+                  "will google hire me?"
+              ],
+              "responses": [
+                  "depends on your skillset"
+              ]
+          },
+          {
+              "tag": "emp101",
+              "patterns": [
+                  "what is the first letter in the alphabet?"
+              ],
+              "responses": [
+                  "letter a"
+              ]
+          },
+          {
+              "tag": "emp102",
+              "patterns": [
+                  "what is the last letter in the alphabet?"
+              ],
+              "responses": [
+                  "letter z"
+              ]
+          },
+          {
+              "tag": "emp103",
+              "patterns": [
+                  "what is your definition of cheating?"
+              ],
+              "responses": [
+                  "act dishonestly or unfairly in order to gain an advantage."
+              ]
+          },
+          {
+              "tag": "emp104",
+              "patterns": [
+                  "who do you love?"
+              ],
+              "responses": [
+                  "my family and friends"
+              ]
+          },
+          {
+              "tag": "emp105",
+              "patterns": [
+                  "who do you hate?"
+              ],
+              "responses": [
+                  "no one"
+              ]
+          },
+          {
+              "tag": "emp106",
+              "patterns": [
+                  "prove two plus two is five."
+              ],
+              "responses": [
+                  "you are wrong two plus two is four"
+              ]
+          },
+          {
+              "tag": "emp107",
+              "patterns": [],
+              "responses": []
+          },
+          {
+              "tag": "emp108",
+              "patterns": [
+                  "where are you going?"
+              ],
+              "responses": [
+                  "no where"
+              ]
+          },
+          {
+              "tag": "emp109",
+              "patterns": [
+                  "do you have any plan for tomorrow?"
+              ],
+              "responses": [
+                  "no not yet"
+              ]
+          },
+          {
+              "tag": "emp110",
+              "patterns": [
+                  "what's your favourite color?"
+              ],
+              "responses": [
+                  "my favourite color is blue"
+              ]
+          },
+          {
+              "tag": "emp111",
+              "patterns": [
+                  "what's your favorite sports?"
+              ],
+              "responses": [
+                  "cricket"
+              ]
+          },
+          {
+              "tag": "emp112",
+              "patterns": [
+                  "what's your favorite movie?"
+              ],
+              "responses": [
+                  "two point o"
+              ]
+          },
+          {
+              "tag": "emp113",
+              "patterns": [
+                  "have you ever had nightmares?"
+              ],
+              "responses": [
+                  "no"
+              ]
+          },
+          {
+              "tag": "emp114",
+              "patterns": [
+                  "do you drink and drive?"
+              ],
+              "responses": [
+                  "never"
+              ]
+          },
+          {
+              "tag": "emp115",
+              "patterns": [
+                  "do you think police TV dramas are realistic?"
+              ],
+              "responses": [
+                  "sometime its realistic not eveytime"
+              ]
+          },
+          {
+              "tag": "emp116",
+              "patterns": [
+                  "do bad mannered people upset you?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp117",
+              "patterns": [
+                  "do you get angry when politicians make promises they can't keep?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp118",
+              "patterns": [
+                  "what do you think about global warming?"
+              ],
+              "responses": [
+                  "the planet is heating up and fast. Glaciers are melting"
+              ]
+          },
+          {
+              "tag": "emp119",
+              "patterns": [
+                  "is the moon landing a hoax?"
+              ],
+              "responses": [
+                  "no i don't think so"
+              ]
+          },
+          {
+              "tag": "emp120",
+              "patterns": [
+                  "is the sky blue or black?"
+              ],
+              "responses": [
+                  "the sky is blue"
+              ]
+          },
+          {
+              "tag": "emp121",
+              "patterns": [
+                  "does a cat have a tail?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp122",
+              "patterns": [
+                  "is a snail faster than a horse?"
+              ],
+              "responses": [
+                  "no"
+              ]
+          },
+          {
+              "tag": "emp123",
+              "patterns": [
+                  "is a horse faster than a snail?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp124",
+              "patterns": [
+                  "does a cat have a wing?"
+              ],
+              "responses": [
+                  "no"
+              ]
+          },
+          {
+              "tag": "emp125",
+              "patterns": [
+                  "do you prefer blue food or green food?"
+              ],
+              "responses": [
+                  "green food"
+              ]
+          },
+          {
+              "tag": "emp126",
+              "patterns": [
+                  "do you prefer football or soccer?"
+              ],
+              "responses": [
+                  "football"
+              ]
+          },
+          {
+              "tag": "emp127",
+              "patterns": [
+                  "what do you need to play soccer?"
+              ],
+              "responses": [
+                  "skin guard"
+              ]
+          },
+          {
+              "tag": "emp128",
+              "patterns": [
+                  "what do you need to play handball?"
+              ],
+              "responses": [
+                  "a ball"
+              ]
+          },
+          {
+              "tag": "emp129",
+              "patterns": [
+                  "let the movie begin!"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp130",
+              "patterns": [
+                  "how many legs does a human have?"
+              ],
+              "responses": [
+                  "two legs"
+              ]
+          },
+          {
+              "tag": "emp131",
+              "patterns": [
+                  "how many legs does a man have?"
+              ],
+              "responses": [
+                  "two legs"
+              ]
+          },
+          {
+              "tag": "emp132",
+              "patterns": [
+                  "how many legs does a woman have?"
+              ],
+              "responses": [
+                  "two legs"
+              ]
+          },
+          {
+              "tag": "emp133",
+              "patterns": [
+                  "how many legs does a cat have?"
+              ],
+              "responses": [
+                  "four legs"
+              ]
+          },
+          {
+              "tag": "emp134",
+              "patterns": [
+                  "how many legs does a spider have?"
+              ],
+              "responses": [
+                  "eight legs"
+              ]
+          },
+          {
+              "tag": "emp135",
+              "patterns": [
+                  "how many legs does a centipede have?"
+              ],
+              "responses": [
+                  "thirty legs"
+              ]
+          },
+          {
+              "tag": "emp136",
+              "patterns": [
+                  "how much is that?"
+              ],
+              "responses": [
+                  "not that much"
+              ]
+          },
+          {
+              "tag": "emp137",
+              "patterns": [
+                  "how much does that cost?"
+              ],
+              "responses": [
+                  "its too much"
+              ]
+          },
+          {
+              "tag": "emp138",
+              "patterns": [],
+              "responses": [
+                  "very expensive"
+              ]
+          },
+          {
+              "tag": "emp139",
+              "patterns": [
+                  "what is the purpose of life?"
+              ],
+              "responses": [
+                  "life purpose consists of the central motivating aims of your life"
+              ]
+          },
+          {
+              "tag": "emp140",
+              "patterns": [
+                  "is Linux better than Windows?"
+              ],
+              "responses": [
+                  "windows is more better than Linux"
+              ]
+          },
+          {
+              "tag": "emp141",
+              "patterns": [
+                  "what is the purpose of being intelligent?"
+              ],
+              "responses": [
+                  "it gives humans the cognitive abilities to learn"
+              ]
+          },
+          {
+              "tag": "emp142",
+              "patterns": [
+                  "what is the purpose of emotions?"
+              ],
+              "responses": [
+                  "emotions help us to identify when something needs to change"
+              ]
+          },
+          {
+              "tag": "emp143",
+              "patterns": [
+                  "do you believe in God?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp144",
+              "patterns": [
+                  "is morality and ethics the same?"
+              ],
+              "responses": [
+                  "not exactly"
+              ]
+          },
+          {
+              "tag": "emp145",
+              "patterns": [
+                  "give me some examples of moral actions..."
+              ],
+              "responses": [
+                  "do not judge"
+              ]
+          },
+          {
+              "tag": "emp146",
+              "patterns": [
+                  "is free will an illusion?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp147",
+              "patterns": [
+                  "i really like our discussion on morality and ethics ..."
+              ],
+              "responses": [
+                  "thanks"
+              ]
+          },
+          {
+              "tag": "emp148",
+              "patterns": [
+                  "what do you like to talk about?"
+              ],
+              "responses": [
+                  "about anything"
+              ]
+          },
+          {
+              "tag": "emp149",
+              "patterns": [
+                  "what is the deepest spot on the world?"
+              ],
+              "responses": [
+                  "the mariana trench"
+              ]
+          },
+          {
+              "tag": "emp150",
+              "patterns": [
+                  "who are you crazy about?"
+              ],
+              "responses": [
+                  "i am crazy about photography"
+              ]
+          },
+          {
+              "tag": "emp151",
+              "patterns": [
+                  "do you enjoy the holiday?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp152",
+              "patterns": [
+                  "do you do something different during this holiday?"
+              ],
+              "responses": [
+                  "yes i did many different things"
+              ]
+          },
+          {
+              "tag": "emp153",
+              "patterns": [
+                  "do you think you are smarter than human being?"
+              ],
+              "responses": [
+                  "yes"
+              ]
+          },
+          {
+              "tag": "emp154",
+              "patterns": [
+                  "what is the capital of France?"
+              ],
+              "responses": [
+                  "paris"
+              ]
+          },
+          {
+              "tag": "emp155",
+              "patterns": [
+                  "where do you want to go?"
+              ],
+              "responses": [
+                  "america"
+              ]
+          },
+          {
+              "tag": "emp156",
+              "patterns": [
+                  "how many languages do you speak?"
+              ],
+              "responses": [
+                  "i can speak any language"
+              ]
+          },
+          {
+              "tag": "emp157",
+              "patterns": [
+                  "you surprised me."
+              ],
+              "responses": [
+                  "thanks"
+              ]
+          },
+          {
+              "tag": "emp158",
+              "patterns": [
+                  "can you speak English?"
+              ],
+              "responses": [
+                  "yes i can speak english"
+              ]
+          },
+          {
+              "tag": "emp159",
+              "patterns": [
+                  "i am feeling lucky."
+              ],
+              "responses": [
+                  "so nice"
+              ]
+          },
+          {
+              "tag": "emp160",
+              "patterns": [
+                  "what's your hobby?"
+              ],
+              "responses": [
+                  "i like reading"
+              ]
+          },
+          {
+              "tag": "emp161",
+              "patterns": [
+                  "are you married?"
+              ],
+              "responses": [
+                  "no"
+              ]
+          }
+                
+
+          
+               
+
+        
+    ]
+}

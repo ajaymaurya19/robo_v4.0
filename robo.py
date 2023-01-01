@@ -5,7 +5,6 @@ import logging
 import json
 
 import calendar
-from camera import cam
 from pickle import NONE
 
 from nltk.util import pr
@@ -17,17 +16,14 @@ import random
 from os import path
 import subprocess
 from robo_tts import take_command, talk, change_language, talk_gtts
-from robo_move4 import *
 import multiprocessing as mp
 from threading import Thread
-#from robo_move4 import angle
+
 import click
 import google.auth.transport.grpc
 import google.auth.transport.requests
 import google.oauth2.credentials
-from run import greeting
-from servokit import ServoKit
-kit = ServoKit()
+
 print('loading.....')
 from google.assistant.embedded.v1alpha2 import (
     embedded_assistant_pb2,
@@ -151,8 +147,6 @@ class SampleTextAssistant(object):
               metavar='<grpc deadline>', show_default=True,
               help='gRPC deadline in seconds')
 
-
-
 def main(api_endpoint, credentials,
          device_model_id, device_id, lang, display, verbose,
          grpc_deadline, *args, **kwargs):
@@ -192,80 +186,8 @@ def main(api_endpoint, credentials,
             talk_gtts(response_text,"en")
             #print("google")
 
-'''def sdk(query):
-    main()'''
 
-    #rightMotor = Motor(32, 13, 16)
 
-dis = DistanceSensor()
-def main_roboAI2(q):
-    from servokit import ServoKit
-    kit = ServoKit()
-    kit.angle(6, 250)
-    kit.angle(7, 400)
-    rightMotor = Motor(32,21,19)
-    leftMotor = Motor(33,26,24)
-    speed = 50
-        
-    leftMotor.setSpeed(speed)
-    rightMotor.setSpeed(speed)
-    
-    
-    
-    while True:        
-        data = dis.getDistance()
-        #print(data)
-        if not q.empty():
-            q_is = q.get()
-            if q_is =="END":
-                break
-            if q_is =="stop":
-                break
-        if data == -1:
-            continue
-        if data < 25:
-            print('stop')
-            leftMotor.stop()
-            rightMotor.stop()
-        if data >25:
-                #print(data)
-            print("goForward")
-            leftMotor.goForward()
-            rightMotor.goForward()
-        elif data < 25: 
-            print("stop")
-       
-            
-      
-            kit.angle(6, 100)
-            kit.angle(7, 400)
-            time.sleep(1)
-            left_dis = dis.getDistance()
-            
-            kit.angle(6, 350)
-            kit.angle(7, 400)
-
-           
-            time.sleep(1)
-            right_dis = dis.getDistance()
-            kit.angle(6, 250)
-            kit.angle(7, 400)
-
-            if left_dis and right_dis< 15:
-                print("gobackword")
-                leftMotor.goBackward()
-                rightMotor.goBackward()
-                time.sleep(2)
-            elif left_dis > right_dis:
-                print("goleft")
-                leftMotor.stop()
-                rightMotor.goForward()
-                time.sleep(5)
-            elif left_dis < right_dis:
-                print('goright')
-                leftMotor.goForward()
-                rightMotor.stop()
-                time.sleep(5)
 
 def move_cam():
     print("csm move")
@@ -282,7 +204,7 @@ def follow():
     print('follow')
 def google_sdk():
     print("google sdk")
-    query = massage
+    query = message
     main()   
 def look_right():
     print("looking right")
@@ -292,6 +214,28 @@ def time_now():
     time = datetime.datetime.now().strftime('%I:%M %p')
     S_text = 'Current time is ' + time
     talk_gtts(S_text,'en')
+
+def current_year():
+    current_date = date.today()
+    m = current_date.year
+    S_text = 'Current year is ' + m
+    talk_gtts(S_text,'en')
+    
+    
+def month_current():
+    current_date = date.today()
+    m = current_date.month
+    month = calendar.month_name[m]
+    S_text = 'Current year is ' + month
+    talk_gtts(S_text,'en')
+
+#elif ('tomorrow' in query and 'date' in query) or 'what is tomorrow' in query or (('day' in query or 'date' in query) and 'after today' in query):
+def tomorrow():
+    td = datetime.date.today() + datetime.timedelta(days=1)
+    S_text = 'Current year is ' + td
+    talk_gtts(S_text,'en')
+    
+    
   
 def look_left():
     kit.angle(6, 180)
@@ -335,7 +279,20 @@ def wishMe():
         talk_gtts("Good Afternoon!",'en')
     else:
         talk_gtts("Good Evening!",'en')
+def greeting():
+    playsound('/media/robo/nvidia/Robo_3.0/good.mp3', True)
 
+    playsound('/media/robo/nvidia/Robo_3.0/college.mp3', True)
+    playsound('/media/robo/nvidia/Robo_3.0/hello.mp3', True)
+    playsound('/media/robo/nvidia/Robo_3.0/introd.mp3', True)
+
+    playsound('/media/robo/nvidia/Robo_3.0/birth.mp3', True)
+
+    kit.angle(0, 250)
+    kit.angle(3, 250)
+    time.sleep(15)
+    kit.angle(3, 0)
+    kit.angle(0, 500)
             
 
 if __name__ == "__main__":
@@ -385,43 +342,51 @@ if __name__ == "__main__":
             #parent_conn.send(['0'])
             print('listen...')
             #led.led_grb(('green'))
-            massage = take_command()
-            #massage = input('Enter..')
+            message = take_command()
+            #message = input('Enter..')
             #led.led_grb(('red'))
-            if massage is 'nothing':
+            if message is 'nothing':
                 pass 
-            print(massage)
-            if "reco" in massage:
+            print(message)
+            if "reco" in message:
                 q.put('face_reco')
-            elif 'can you see me' in massage or 'see me' in massage or 'tell me my name' in massage:
+            elif 'can you see me' in message or 'see me' in message or 'tell me my name' in message:
                 q.put('speak_reco')
-            elif 'can you see this' in massage or 'see this' in massage or 'tell me what is this' in massage or 'detect this' in massage:
+            elif 'can you see this' in message or 'see this' in message or 'tell me what is this' in message or 'detect this' in message:
                 print('detection')
                 q.put('speak_detect')
           
-            elif "tell me about yourself" in massage:
+            elif "tell me about yourself" in message:
                 import hello
                 hello.intro()
-            elif "could you play a song for me":
-                talk_gtts('yes', 'en')
-            elif "hi robo" in massage or "Hello robo":
-                import run
+            
+            elif "hi robo" in message or "hello robo" in message or "hi robot" in message or "hello robot" in message or "hey robo" in message or "hey robot" in message or "hay robot" in message or "hay robot" in message:
+              
                 greeting()
-                playsound('/media/robo/nvidia/Robo_3.0/Happy-Birthday-To-You-Happy-Birthday-Songs-2021-WishesPlus.com_.mp3', True)
-            elif "robo move" in massage or "robot move" in massage or "start autopilot" in massage or "autopilot" in massage:
+            
+                elif 'year' in query or ('current' in query and 'year' in query):
+                current_date = date.today()
+                m = current_date.year
+                print(f'Current year is {m}')
+                robo_tts.talk_gtts(f'Current year is {m}')
+                
+            elif "robo move" in message or "robot move" in message or "start autopilot" in message or "autopilot" in message:
                 #move_ar = move_ret(1)  
                 t2.start()
-            elif "robo stop move" in massage or "robt stop move"in massage or "stop"in massage:
+            elif "robo stop move" in message or "robt stop move"in message or "stop"in message:
                 q.put('stop')
-            elif "stop code" in massage:
+            elif "stop code" in message:
                 q.put("END")
                 break
+                '''elif 'image' in query:
+                path = "C:\Program Files\Internet Explorer\images"
+                os.startfile(path)'''
             else:
-                mess = assistant.request(massage)
+                mess = assistant.request(message)
                 #print(mess)
                 
                 if "google" in mess:
-                    query = massage
+                    query = message
                     google_sdk()
                 
                 elif "trc face" in mess:
