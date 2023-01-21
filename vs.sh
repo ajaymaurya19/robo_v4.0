@@ -1,0 +1,2 @@
+cd installVSCode
+ ./installVSCode.sh
